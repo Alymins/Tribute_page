@@ -1,0 +1,115 @@
+/* Mobile First */
+body{
+    margin: 0;
+    background-color: #73655A;
+}
+
+#main {
+    background-color: #1A1E26;
+    color: #A6882E;
+    margin: 0;
+}
+
+#title {
+    margin: 0;
+}
+
+#img-div{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2vw 0;
+    background-color: #222940;
+}
+
+#image {
+    max-width: 1024px;
+    max-height: 512px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+#img-caption {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+#tribute-info {
+    padding: 0;
+}
+
+#tribute-info header h2{
+    text-align: center;
+}
+
+#tribute-info ul {
+    font-size: 1.1em;
+}
+
+.title {
+    text-align: center;
+    padding: 4vh 0;
+    margin: 0;
+}
+
+.title p {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1em;
+    margin: 2vh 0 0 0;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.footer p {
+    margin: 0;
+    padding: 4vh 0;
+}
+
+.footer p a {
+    color: #F2DCB3;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    body{
+        padding: 25px;
+    }
+
+    #main {
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px #232833;
+    }
+
+    #image {
+        width: 80%;
+        height: auto;
+    }
+
+    #image:hover {
+        animation-name: zoom-image;
+        animation-duration: 100ms;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes zoom-image {
+        100% {
+            transform: scale(1.15);
+            box-shadow: 5px 5px 10px #232833;
+        }
+    }
+
+    #tribute-info ul {
+        width: 50%;
+        margin: auto;
+    }
+}
